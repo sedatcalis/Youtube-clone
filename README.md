@@ -6,4 +6,5 @@
 - react-player
 - millify > sayı formatlama
 - moment > zaman hesaplama
-- tailwind-css >stillendiröa
+- tailwind-css >stillendirme
+![Uploading Adsız tasarım.gif…]()
