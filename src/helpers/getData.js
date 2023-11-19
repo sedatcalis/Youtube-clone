@@ -3,8 +3,8 @@ import axios from "axios";
 const options = {
   params: { geo: "TR", lang: "tr" },
   headers: {
-    "X-RapidAPI-Key": "d901b289e9msh4629810822012a9p11a209jsnf9938023329f",
-    "X-RapidAPI-Host": "yt-api.p.rapidapi.com",
+    'X-RapidAPI-Key': 'a033fd8e7cmshc29f8770f4efad5p1909a3jsn46fcdc574cfc',
+    'X-RapidAPI-Host': 'yt-api.p.rapidapi.com'
   },
 };
 axios.defaults.baseURL = "https://yt-api.p.rapidapi.com";

@@ -7,6 +7,7 @@ import StringArea from "./StringArea";
 import millify from "millify";
 import moment from "moment/moment";
 import "moment/locale/tr";
+import Comments from "./Comments";
 
 const VideoInfo = () => {
   const { id } = useParams();
@@ -49,17 +50,17 @@ const VideoInfo = () => {
           <p className="text-gray-400">{channel.subscriberCountText} abone</p>
         </div>
 
-        <button className="bg-white rounded-full text-black px-3 h-9 transition hover:bg-gray-400">
+        <button className="btn bg-white rounded-full text-black px-3 h-9 transition hover:bg-gray-400">
           Abone Ol
         </button>
       </div>
 
-      <div className="flex items-center rounded-full bg-gray-600 ">
-        <div className="flex items-center gap-3 py-2 px-4 border-r">
-          <AiFillLike className="cursor-pointer"/>
+      <div className=" flex items-center rounded-full bg-gray-600 ">
+        <div className=" flex items-center gap-3 py-2 px-4 border-r">
+          <AiFillLike className=" cursor-pointer"/>
           <p>{Math.round(Math.random() * 100)}B</p>
         </div>
-        <div className="py-2 px-4">
+        <div className=" py-2 px-4">
           <AiFillDislike />
           
         </div>
@@ -73,7 +74,7 @@ const VideoInfo = () => {
       </div>
       <StringArea text={detail.description} max={300} />
     </div>
-
+<Comments/>
   </>
   );
 };

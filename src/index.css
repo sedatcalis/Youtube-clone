@@ -11,7 +11,7 @@ body {
 ::-webkit-scrollbar{
   background-color: black;
   width: 9px;
-  background: gray;
+
   border-radius: 10px;
 }
 .videos {
@@ -46,10 +46,27 @@ body {
     gap: 50px;
     padding: 20px;
   }
+  .btn{
+    margin-top: 30px;
+
+    font-weight: bold;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  
   
 }
 .row{
   display: grid;
   grid-template-columns: 169px auto;
   gap: 10px;
+}
+
+@media (max-width: 570px){
+  .input{
+    display: none;
+    
+  }
 }

@@ -20,9 +20,7 @@ export function YoutubeProvider({ children }) {
       selectedCategory.type === "trending"
     ) {
       // yardımcı fonksiyonu kullanıp api istek atma
-      getData(`/${selectedCategory.type}`).then((res) =>
-        setVideos(res.data.data)
-      );
+      getData(`/${selectedCategory.type}`).then((res) => setVideos(res.data.data))
     }
 
     // tüm kategoriler için istek atma
